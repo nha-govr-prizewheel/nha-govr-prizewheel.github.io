@@ -18,7 +18,6 @@ body
 /* Sets the background image for the wheel */
 td.the_wheel
 {
-    background-image: url(./wheel_back.png);
     background-position: center;
     background-repeat: none;
 }
