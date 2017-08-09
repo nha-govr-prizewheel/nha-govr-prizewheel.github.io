@@ -55,7 +55,7 @@
                             </tr>
                         </table>
                         <br />
-                        <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
+                        <button id="spin_button" type="button" onClick="startSpin();" >Spin</button
                         <br /><br />
                         &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
                     </div>
@@ -158,8 +158,7 @@
                         theWheel.animation.spins = 15;
                     }
                     
-                    // Disable the spin button so can't click again while wheel is spinning.
-                    document.getElementById('spin_button').src       = "spin_off.png";
+                    // Disable the spin button so can't click again while wheel is spinning
                     document.getElementById('spin_button').className = "";
                     
                     // Begin the spin animation by calling startAnimation on the wheel object.
