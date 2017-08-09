@@ -38,7 +38,10 @@
             <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
         </canvas>
 
-
+        <div style="text-align:center;width:800px">
+            <button style="width:250px" id="spin_button" type="button" onClick="resetWheel();" >Reset</button>
+        </div>
+        
         <script>
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
@@ -148,11 +151,7 @@
             {
                 theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
                 theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
-                theWheel.draw();                // Call draw to render changes to the wheel.
-                
-                document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
-                document.getElementById('pw2').className = "";
-                document.getElementById('pw3').className = "";
+                theWheel.draw();                // Call draw to render changes to the wheel
                 
                 wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
             }
