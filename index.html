@@ -45,19 +45,22 @@
         <script>
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
-                'numSegments'  : 8,     // Specify number of segments.
+                'numSegments'  : 9,     // Specify number of segments.
                 //'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
                 'textFontSize' : 28,    // Set font size as desired.
                 'segments'     :        // Define segments including colour and text.
                 [
-                   {'fillStyle' : '#eae56f', 'text' : "Manager's Choice"},
+                   {'fillStyle' : '#eae56f',
+                    'size' : winwheelPercentToDegrees(5)
+                    'text' : "Manager's Choice"},
                    {'fillStyle' : '#89f26e', 'text' : 'Jeans Day'},
-                   {'fillStyle' : '#7de6ef', 'text' : 'Leave Early'},
+                   {'fillStyle' : '#7de6ef', 'text' : 'Leave at 2'},
                    {'fillStyle' : '#e7706f', 'text' : 'Leave Now!!!'},
                    {'fillStyle' : '#eae56f', 'text' : 'High-Five Points'},
                    {'fillStyle' : '#89f26e', 'text' : 'Intern Valet Service'},
                    {'fillStyle' : '#7de6ef', 'text' : '30 Minute Nap'},
-                   {'fillStyle' : '#e7706f', 'text' : 'Treat from the Market'}
+                   {'fillStyle' : '#e7706f', 'text' : 'Treat from the Market'},
+                   {'fillStyle' : '#e7706f', 'text' : 'Jeff Goes to Utah'}
                 ],
                 'animation' :           // Specify the animation to use.
                 {
